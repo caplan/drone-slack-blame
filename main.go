@@ -13,6 +13,9 @@ var (
 )
 
 func main() {
+
+	logrus.SetLevel(logrus.TraceLevel)
+
 	app := cli.NewApp()
 	app.Name = "slack blame plugin"
 	app.Usage = "slack blame plugin"
